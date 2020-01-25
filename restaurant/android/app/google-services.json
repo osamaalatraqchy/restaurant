@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "924094079510",
+    "firebase_url": "https://restaurant-ab447.firebaseio.com",
+    "project_id": "restaurant-ab447",
+    "storage_bucket": "restaurant-ab447.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924094079510:android:01719357933031b95ccb37",
+        "android_client_info": {
+          "package_name": "com.restaurant.osama.restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924094079510-im5a53kf6abpdgqt1dd8j3g16espnr36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8EMkj9XJBEFLWeRZEW_erSJnOkfaK7cQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924094079510-im5a53kf6abpdgqt1dd8j3g16espnr36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
