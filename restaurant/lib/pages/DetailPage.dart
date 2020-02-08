@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:restaurant/provider/Position.dart';
 import 'package:restaurant/tab/TabMaster.dart';
-
+import 'package:intl/intl.dart';
 
 class DetailPage extends StatefulWidget {
   final DocumentSnapshot data;
@@ -17,6 +17,8 @@ class _DetailPageState extends State<DetailPage> {
   var count = 0;
   final api = Firestore.instance;
   Widget build(context) {
+    DateTime now = DateTime.now();
+    String formattedDate = DateFormat('kk:mm:ss').format(now);
     final position = Provider.of<Position>(context);
     return WillPopScope(
       onWillPop: () async => false,
@@ -29,7 +31,8 @@ class _DetailPageState extends State<DetailPage> {
               'name' : widget.data['name'],
               'img' : widget.data['img'],
               'price' : int.parse(widget.data['price']),
-              'quan' : count
+              'quan' : count,
+              'time' : formattedDate.toString()
             });
             Navigator.push(context, MaterialPageRoute(builder: (context) => TabMaster()));
           },

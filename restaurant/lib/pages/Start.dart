@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:restaurant/api/db.dart';
 import 'package:restaurant/provider/Position.dart';
 import 'package:restaurant/tab/TabMaster.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-
-import 'Order.dart';
-
-
 
 class Start extends StatefulWidget{
   @override

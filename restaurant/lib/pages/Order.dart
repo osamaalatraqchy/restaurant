@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:restaurant/provider/Position.dart';
 import 'package:restaurant/tab/TabMaster.dart';
-import 'package:restaurant/ui/bottom_nav.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+
 
 class Order extends StatefulWidget {
   @override
@@ -65,11 +64,11 @@ class OrderState extends State<Order> {
               child: Card(
                 elevation: 5,
                 child: Container(
-                  height: 100.0,
+                  height: 150.0,
                   child: Row(
                     children: <Widget>[
                       Container(
-                        height: 100.0,
+                        height: 150.0,
                         width: 100.0,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
@@ -80,7 +79,7 @@ class OrderState extends State<Order> {
                                 image: NetworkImage(data['img']))),
                       ),
                       Container(
-                        height: 100,
+                        height: 150,
                         child: Padding(
                           padding: EdgeInsets.fromLTRB(10, 2, 0, 0),
                           child: Column(
@@ -104,7 +103,12 @@ class OrderState extends State<Order> {
                                         color: Color.fromARGB(255, 48, 48, 54)),
                                   ),
                                 ),
-                              )
+                              ),
+                              Expanded(
+                                child: Text(
+                                  data['time'].toString(),
+                                ),
+                              ),
                             ],
                           ),
                         ),
